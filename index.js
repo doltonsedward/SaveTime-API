@@ -16,4 +16,4 @@ app.use(express.json())
 // configuration router
 app.use('/api/v1', router)
 
-app.listen(port, ()=> console.log('Server running at port ', port))
+app.listen(process.env.PORT || port, ()=> console.log('Server running at port ', port))
