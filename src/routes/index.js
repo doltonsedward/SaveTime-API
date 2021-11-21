@@ -1,13 +1,15 @@
 const express = require('express')
-const { register, login } = require('../controllers/auth')
-const { getUsers } = require('../controllers/user')
+const { getTodos, addTodo, updateTodo, deleteTodo } = require('../controllers/todo')
 
 const router = express.Router()
 
-router.get('/users', getUsers)
+router.get('/todos', getTodos)
+router.post('/todo', addTodo)
+router.patch('/todo/:id', updateTodo)
+router.delete('/todo/:id', deleteTodo)
 
 // login register
-router.post('/register', register)
-router.post('/login', login)
+// router.post('/register', register)
+// router.post('/login', login)
 
 module.exports = router
