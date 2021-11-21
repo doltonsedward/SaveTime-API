@@ -1,17 +1,17 @@
 {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "savetime_dev_db",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "vqqtjldcccnbgz",
+    "password": "114838cc806602119504bd73fc8150232ae84d856945f9fb266553e88820a69c",
+    "database": "d8u2kkcr82bt8u",
+    "host": "ec2-35-173-207-244.compute-1.amazonaws.com",
+    "dialect": "postgres"
   },
   "test": {
-    "username": "root",
-    "password": null,
-    "database": "savetime_dev_db",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "vqqtjldcccnbgz",
+    "password": "114838cc806602119504bd73fc8150232ae84d856945f9fb266553e88820a69c",
+    "database": "d8u2kkcr82bt8u",
+    "host": "ec2-35-173-207-244.compute-1.amazonaws.com",
+    "dialect": "postgres"
   },
   "production": {
     "username": "vqqtjldcccnbgz",
