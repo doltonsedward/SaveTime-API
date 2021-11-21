@@ -9,7 +9,7 @@
   "test": {
     "username": "root",
     "password": null,
-    "database": "savetime_test_db",
+    "database": "savetime_dev_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
