@@ -14,7 +14,8 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   todo.init({
-    name: DataTypes.STRING
+    name: DataTypes.STRING,
+    description: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'todo',
