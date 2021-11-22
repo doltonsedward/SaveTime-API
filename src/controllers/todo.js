@@ -16,6 +16,28 @@ exports.getTodos = async (req, res) => {
     }
 }
 
+exports.getTodo = async (req, res) => {
+    try {
+        const { id } = req.params
+
+        const response = await todo.findOne({
+            where: {
+                id
+            }
+        })
+
+        res.send({
+            status: "success",
+            todo: response
+        })
+    } catch (error) {
+        res.status(400).send({
+            status: "failed",
+            message: "Server Error"
+        })
+    }
+}
+
 exports.addTodo = async (req, res) => {
     try {
         const response = await todo.create({ ...req.body })
