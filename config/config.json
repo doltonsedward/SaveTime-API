@@ -13,9 +13,23 @@
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
-  "production": {
+  "tessst": {
     "use_env_variable": "DATABASE_URL",
     "dialect": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
+  },
+    "production": {
+    "username": "root",
+    "host": "containers-us-west-96.railway.app",
+    "password": "IRRt3BjnZdXDmH802rMD",
+    "use_env_variable": "DATABASE_URL",
+    "database": "railway",
+    "dialect": "mysql",
     "dialectOptions": {
       "ssl": {
         "require": true,
