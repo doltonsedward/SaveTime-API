@@ -27,7 +27,6 @@
     "username": "root",
     "host": "containers-us-west-96.railway.app",
     "password": "IRRt3BjnZdXDmH802rMD",
-    "use_env_variable": "DATABASE_URL",
     "database": "railway",
     "dialect": "mysql",
     "dialectOptions": {
